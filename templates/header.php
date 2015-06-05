@@ -1,4 +1,4 @@
-<header class="banner navbar navbar-inverse navbar-static-top" role="banner">
+<header class="banner navbar navbar-default navbar-static-top" role="banner">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -11,7 +11,7 @@
             <p class="visible-xs mobil-number">1&#40;800&#41;350-4774</p>
         </div>
 
-        <nav class="collapse navbar-collapse" role="navigation">
+        <nav class="collapse navbar-collapse navbar-right" role="navigation">
             <?php
 if (has_nav_menu('primary_navigation')) :
 wp_nav_menu(['theme_location' => 'primary_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'nav navbar-nav']);
