@@ -3,3 +3,19 @@
     a {color: white;}
 }
 
+.navbar-default {
+    .navbar-nav>li>a{
+        font-size: 1.2em;
+        letter-spacing: 0.05em;
+        @media(min-width:$screen-md){
+            font-weight: 300;
+        }
+
+    }
+    .navbar-nav>li>a:focus{
+
+    }
+    .navbar-default .navbar-nav>li>a:hover{
+
+    }
+}
