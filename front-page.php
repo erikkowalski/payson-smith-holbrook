@@ -40,5 +40,13 @@
         <span class="sr-only">Next</span>
     </a> -->
 </div>
+
+<?php
+if (has_nav_menu('secondary_homepage_navigation')) :
+wp_nav_menu(['theme_location' => 'secondary_homepage_navigation',  'menu_class' => 'nav navbar-nav']);
+endif;
+?>
+
 <?php get_template_part('templates/content', 'page'); ?>
 <?php endwhile; ?>
+
