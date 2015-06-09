@@ -1,1 +1,17 @@
+comment-content img, .entry-content img, .widget img {
+    max-width: 100%
+}
+
+img[class*=align], img[class*=wp-image-] {
+    height: auto;
+}
+img.size-full {
+    max-width: 100%;
+    width: auto;
+}
+
+img.wp-post-image {
+    max-width: 100%;
+    height: auto;
+}
 

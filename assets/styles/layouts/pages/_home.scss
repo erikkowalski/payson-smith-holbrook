@@ -87,7 +87,11 @@
                 display: inline-block;
                 background: $brand-primary;
                 color: white;
-                padding: 20px
+                padding: 20px;
+                    @media (min-width:$screen-md){
+                        font-size: 1.4em;
+                        letter-spacing: 0.1em;
+                    }
             }
             }
         }
