@@ -1,13 +1,13 @@
 <?php while (have_posts()) : the_post(); ?>
 <?php // get_template_part('templates/page', 'header'); ?>
 <div id="carousel-home" class="carousel fade " data-ride="carousel">
-    <!-- Indicators -->
+    <!-- Indicators
     <ol class="carousel-indicators">
         <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-home" data-slide-to="1"></li>
         <li data-target="#carousel-home" data-slide-to="2"></li>
         <li data-target="#carousel-home" data-slide-to="3 "></li>
-    </ol>
+</ol>  -->
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
@@ -29,23 +29,15 @@
 
 
     </div>
+    <nav class="hidden-xs slider-nav">
+        <?php if (has_nav_menu('secondary_homepage_navigation')) :
+        wp_nav_menu(['theme_location' => 'secondary_homepage_navigation',  'menu_class' => 'nav navbar-nav']);
+        endif; ?>
+    </nav>
 
-    <!-- Controls -->
-    <!--<a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a> -->
 </div>
 
-<?php
-if (has_nav_menu('secondary_homepage_navigation')) :
-wp_nav_menu(['theme_location' => 'secondary_homepage_navigation',  'menu_class' => 'nav navbar-nav']);
-endif;
-?>
+
 
 <?php get_template_part('templates/content', 'page'); ?>
 <?php endwhile; ?>

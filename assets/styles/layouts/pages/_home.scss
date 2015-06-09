@@ -1,7 +1,7 @@
 .home {
     .navbar {
         margin-bottom: 0;
-        border-bottom: 20px solid rgb(195, 195, 195);
+        border-bottom: 15px solid rgb(195, 195, 195);
     }
 
     .main {
@@ -32,14 +32,12 @@
         display: inline-block;
     }
 
-    //------
+    // ------ Carousel Transition Style - - - - - - - - - -
 
-    .carousel.fade
-    {
+    .carousel.fade {
         opacity: 1;
 
-        .item
-        {
+        .item {
             -moz-transition: opacity ease-in-out .7s;
             -o-transition: opacity ease-in-out .7s;
             -webkit-transition: opacity ease-in-out .7s;
@@ -56,8 +54,7 @@
                 position:relative;
             }
 
-            &.active
-            {
+            &.active {
                 opacity: 1;
                 -moz-transition: opacity ease-in-out .7s;
                 -o-transition: opacity ease-in-out .7s;
@@ -66,8 +63,32 @@
                 z-index:2;
             }
         }
-    }
+    } // <--End Carousel Transition Style - - - - - - - - - -
 
-}
+    .slider-nav {
+        @media (min-width:$screen-sm){
+        position: absolute;
+        bottom: 0px;
+        z-index: 1060;
+            @media (min-width:$screen-md){
+                ul {
+                    margin-left: 100px;
+                }
+            }
+
+            li {
+                margin: 0 20px;
+            a {
+                display: inline-block;
+                background: $brand-primary;
+                color: white;
+                padding: 20px
+            }
+            }
+        }
+
+    } // - - - </.slider-nav>
+
+} // - - </.home>
 
 
