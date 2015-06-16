@@ -41,3 +41,28 @@
 <?php get_template_part('templates/content', 'page'); ?>
 <?php endwhile; ?>
 
+
+<?php
+/*
+ * Display 3 random testimonials
+ */
+
+
+$args = array(
+    'post_type' => 'psh_news',
+    'posts_per_page' => 3,
+    'orderby' => 'rand'
+);
+
+$testimonials = new WP_Query( $args );
+    echo '<aside id="news-feed" class="row">';
+    while ( $testimonials->have_posts() ) : $testimonials->the_post();
+    echo '<div class="col-md-4">';
+    echo '<h1 class="entry-title">' . get_the_title() . '</h1>';
+    echo '<div class="entry-content">';
+the_excerpt();
+    echo '</div>';
+    echo '</div>';
+    endwhile;
+    echo '</aside>';
+?>
