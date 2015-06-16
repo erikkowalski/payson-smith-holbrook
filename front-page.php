@@ -42,27 +42,24 @@
 <?php endwhile; ?>
 
 
-<?php
-/*
- * Display 3 random testimonials
- */
-
-
-$args = array(
+<?php //Display 3 random News Posts
+$args = [
     'post_type' => 'psh_news',
     'posts_per_page' => 3,
     'orderby' => 'rand'
-);
+];
 
 $testimonials = new WP_Query( $args );
-    echo '<aside id="news-feed" class="row">';
-    while ( $testimonials->have_posts() ) : $testimonials->the_post();
-    echo '<div class="col-md-4">';
-    echo '<h1 class="entry-title">' . get_the_title() . '</h1>';
-    echo '<div class="entry-content">';
-the_excerpt();
-    echo '</div>';
-    echo '</div>';
-    endwhile;
-    echo '</aside>';
 ?>
+   <aside id="news-feed" class="row news">
+
+    <?php while ( $testimonials->have_posts() ) : $testimonials->the_post(); ?>
+    <div class="col-md-4">
+        <h1 class="entry-title"> <?php echo get_the_title();?> </h1>
+        <div class="entry-content">
+        <?php the_excerpt();?>
+        </div>
+    </div>
+    <?php endwhile;?>
+</aside>
+
