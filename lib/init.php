@@ -26,6 +26,10 @@ function setup() {
         'secondary_homepage_navigation' => __('Secondary Homepage Navigation', 'sage')
     ]);
 
+	 register_nav_menus([
+        'footer_navigation' => __('Footer Navigation', 'sage')
+    ]);
+
   // Add post thumbnails
   // http://codex.wordpress.org/Post_Thumbnails
   // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
