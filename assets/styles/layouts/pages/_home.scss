@@ -73,22 +73,37 @@
   .slider-nav {
         @media (min-width:$screen-sm){
         position: absolute;
+
         bottom: 0px;
+        left: 50%;
         z-index: 1060;
+        margin-left: -380px;
             @media (min-width:$screen-md){
-                ul {
-                    margin-left: 100px;
-                }
+                margin-left: -450px;
+            }
+            @media (min-width:$screen-lg){
+                left: 42%;
+                margin-left: -430px;
             }
 
             li {
-                margin: 0 20px;
+                margin: 0 14px;
+
             a {
+
                 display: inline-block;
-                background: $brand-primary;
+                background:rgba($brand-primary, .85);
+                transition: background 1s;
+                &:hover {
+                    transition: background 1s;
+                    background:rgba($brand-success, .85);
+                }
                 color: white;
                 padding: 20px;
-                    @media (min-width:$screen-md){
+                @media (min-width:$screen-md){
+                   font-size: 1.3em;
+                }
+                    @media (min-width:$screen-lg){
                         font-size: 1.4em;
                         letter-spacing: 0.1em;
                     }
@@ -97,6 +112,36 @@
         }
 
     } // - - - </.slider-nav>
+
+    // News Feed
+
+.news-feed h2 {
+    text-align: center;
+    font-size: 3em;
+    @media (min-width:$screen-sm){
+    padding: 0.5em 0;
+    }
+    color: $brand-primary;
+}
+
+aside {
+    max-width: 1160px;
+    margin: 0 auto;
+    .entry-title {
+        font-size: 1.6em;
+        a{ color: black;}
+        text-transform: uppercase;
+        line-height: 1.3em;
+        @media (max-width:$screen-xs){
+            font-weight: 900;
+        }
+    }
+
+    .entry-content {
+        font-size: 1.3em;
+        font-family: $font-family-serif;
+    }
+}
 
 } // - - </.home>
 

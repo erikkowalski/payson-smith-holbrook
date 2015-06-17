@@ -42,6 +42,10 @@
 <?php endwhile; ?>
 
 
+<section class="news-feed">
+
+<h2>Industry News</h2>
+
 <?php //Display 3 random News Posts
 $args = [
     'post_type' => 'psh_news',
@@ -51,15 +55,18 @@ $args = [
 
 $testimonials = new WP_Query( $args );
 ?>
-   <aside id="news-feed" class="row news">
+   <aside  class="row">
+       <hr/>
 
     <?php while ( $testimonials->have_posts() ) : $testimonials->the_post(); ?>
     <div class="col-md-4">
-        <h1 class="entry-title"> <?php echo get_the_title();?> </h1>
+        <h3 class="entry-title"> <a href="<?php the_permalink(); ?>"><?php the_title();?> </a></h3>
         <div class="entry-content">
         <?php the_excerpt();?>
         </div>
     </div>
     <?php endwhile;?>
 </aside>
+
+</section>
 
