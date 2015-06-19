@@ -37,10 +37,10 @@
 
 </div>
 
-
+<section class="hero-quote container">
 <?php get_template_part('templates/content', 'page'); ?>
 <?php endwhile; ?>
-
+</section>
 
 <section class="news-feed">
 
