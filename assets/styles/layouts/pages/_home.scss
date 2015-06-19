@@ -71,6 +71,29 @@
     } // <--End Carousel Transition Style - - - - - - - - - -
 
   .slider-nav {
+	  a {
+
+		  display: inline-block;
+		  background:rgba($brand-primary, .85);
+		  transition: background 1s;
+		  @media (max-width:$screen-xs){
+			  font-size: 1.6em;
+			  text-align: center;
+			  padding: 0.5em;
+			  margin-bottom: 0.5em;
+			  color: white;
+			  padding-left: 30px;
+
+
+		  }
+
+	  }
+	  @media (max-width:$screen-xs){
+
+		  border-top: 10px solid rgb(195, 195, 195);
+		  border-bottom: 10px solid rgb(195, 195, 195);
+	  }
+
         @media (min-width:$screen-sm){
         position: absolute;
 
@@ -90,10 +113,9 @@
                 margin: 0 14px;
 
             a {
-
-                display: inline-block;
-                background:rgba($brand-primary, .85);
-                transition: background 1s;
+					padding: 20px;
+					background:rgba($brand-primary, .85);
+					color: white;
                 &:hover {
                     transition: background 1s;
                     background:rgba($brand-success, .85);
@@ -142,6 +164,29 @@ aside {
         font-family: $font-family-serif;
     }
 }
+
+	.hero-quote {
+		h2{
+			color: $brand-primary;
+			text-align: center;
+			font-size: 2.6em;
+			padding-top: 1.5em;
+			@media (min-width:$screen-md){
+				font-size: 3.6em;
+			}
+}
+		p {
+				font-family: $font-family-serif;
+				font-size: 1.8em;
+				text-align: center;
+				@media (min-width:$screen-md){
+					font-size: 2.6em;
+				}
+			}
+
+		}
+
+
 
 } // - - </.home>
 
