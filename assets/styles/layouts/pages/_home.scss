@@ -137,13 +137,18 @@
 
     // News Feed
 
-.news-feed h2 {
+.news-feed {
+	h2 {
     text-align: center;
     font-size: 3em;
     @media (min-width:$screen-sm){
     padding: 0.5em 0;
     }
     color: $brand-primary;
+}
+	h3 {
+		text-align: center;
+	}
 }
 
 aside {
