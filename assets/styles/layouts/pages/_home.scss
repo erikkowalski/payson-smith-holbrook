@@ -143,12 +143,29 @@
     font-size: 3em;
     @media (min-width:$screen-sm){
     padding: 0.5em 0;
+		 font-weight: 200;
     }
     color: $brand-primary;
 }
 	h3 {
 		text-align: center;
+		font-family: $font-family-serif;
+		font-size: 2.5em;
+		padding: 0.8em;
+		letter-spacing: 0.01em;
+		background: $gray-light;
+		color: white;
+		border-bottom: 5px solid rgb(195, 195, 195);
+
+				@media (min-width:$screen-sm){
+					padding: 1.5em 0 0.9em 0;
+					font-size: 4em;
+					margin: 1em 0;
+				}
+
 	}
+
+	border-bottom: 50px solid $gray-lighter;
 }
 
 aside {
@@ -156,9 +173,9 @@ aside {
     margin: 0 auto;
     .entry-title {
         font-size: 1.6em;
-        a{ color: black;}
+        a{ color: #454545;}
         text-transform: uppercase;
-        line-height: 1.3em;
+        line-height: 1.15em;
         @media (max-width:$screen-xs){
             font-weight: 900;
         }
@@ -184,14 +201,21 @@ aside {
 				font-family: $font-family-serif;
 				font-size: 1.8em;
 				text-align: center;
+			span {
+				font-family: $font-family-sans-serif;
+				font-size: 0.8em;
+			}
 				@media (min-width:$screen-md){
 					font-size: 2.6em;
+					font-weight: 200;
 				}
 			}
 
 		}
 
-
+	.discription{
+		background:$gray-lighter;
+	}
 
 } // - - </.home>
 
