@@ -60,6 +60,8 @@ $costar_feed_args = [
 $costar_feed = new WP_Query( $costar_feed_args );
 ?>
 	<h3>National Commercial Real Estate News:</h3>
+	<img class="img-responsive" src="<?php the_field('national_news'); ?>" alt="slide four">
+
    <aside  class="row">
     <?php while ( $costar_feed->have_posts() ) : $costar_feed->the_post(); ?>
     <div class="col-md-4">

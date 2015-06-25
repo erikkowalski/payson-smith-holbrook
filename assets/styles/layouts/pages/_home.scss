@@ -155,14 +155,18 @@
 		letter-spacing: 0.01em;
 		background: $gray-light;
 		color: white;
-		border-bottom: 5px solid rgb(195, 195, 195);
+		border-bottom: 5px solid rgb(109, 109, 109);
 
 				@media (min-width:$screen-sm){
 					padding: 1.5em 0 0.9em 0;
 					font-size: 4em;
-					margin: 1em 0;
+					margin: 1em 0 0 0;
 				}
 
+	}
+
+	img {
+		margin-bottom: 20px;
 	}
 
 	border-bottom: 50px solid white;
