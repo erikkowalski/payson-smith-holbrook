@@ -59,10 +59,8 @@ $costar_feed_args = [
 
 $costar_feed = new WP_Query( $costar_feed_args );
 ?>
+	<h3>National Commercial Real Estate News:</h3>
    <aside  class="row">
-
-		<h3>National Commercial Real Estate News:</h3>
-
     <?php while ( $costar_feed->have_posts() ) : $costar_feed->the_post(); ?>
     <div class="col-md-4">
         <h4 class="entry-title"> <a href="<?php the_permalink(); ?>"><?php the_title();?> </a></h4>
@@ -86,8 +84,8 @@ $costar_boston_args = [
 
 $costar_boston = new WP_Query( $costar_boston_args );
 	?>
+	<h3>Boston Commercial Real Estate News:</h3>
 	<aside  class="row">
-		<h3>Boston Commercial Real Estate News</h3>
 		<?php while ( $costar_boston->have_posts() ) : $costar_boston->the_post(); ?>
 		<div class="col-md-4">
 			<h4 class="entry-title"> <a href="<?php the_permalink(); ?>"><?php the_title();?> </a></h4>
@@ -109,8 +107,8 @@ $m_and_a_args = [
 
 
 $m_and_a = new WP_Query( $m_and_a_args ); ?>
+	<h3>M&amp;A News: </h3>
 	<aside  class="row">
-		<h3>M&amp;A News: </h3>
 		<?php while ( $m_and_a->have_posts() ) : $m_and_a->the_post(); ?>
 		<div class="col-md-4">
 			<h4 class="entry-title"> <a href="<?php the_permalink(); ?>"><?php the_title();?> </a></h4>
@@ -130,8 +128,8 @@ $business_args = [
 
 
 $business_news = new WP_Query( $business_args ); ?>
+	<h3>Business News:</h3>
 	<aside  class="row">
-		<h3>Business News:</h3>
 		<?php while ( $business_news->have_posts() ) : $business_news->the_post(); ?>
 		<div class="col-md-4">
 			<h4 class="entry-title"> <a href="<?php the_permalink(); ?>"><?php the_title();?> </a></h4>
@@ -151,8 +149,8 @@ $business_args = [
 
 
 $business_news = new WP_Query( $business_args ); ?>
+	<h3>Economic News:</h3>
 	<aside  class="row">
-		<h3>Economic News:</h3>
 		<?php while ( $business_news->have_posts() ) : $business_news->the_post(); ?>
 		<div class="col-md-4">
 			<h4 class="entry-title"> <a href="<?php the_permalink(); ?>"><?php the_title();?> </a></h4>
@@ -172,8 +170,8 @@ $business_args = [
 
 
 $business_news = new WP_Query( $business_args ); ?>
+	<h3>Financial News:</h3>
 	<aside  class="row">
-		<h3>Financial News:</h3>
 		<?php while ( $business_news->have_posts() ) : $business_news->the_post(); ?>
 		<div class="col-md-4">
 			<h4 class="entry-title"> <a href="<?php the_permalink(); ?>"><?php the_title();?> </a></h4>
