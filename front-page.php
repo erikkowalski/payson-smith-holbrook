@@ -42,6 +42,10 @@
 <?php endwhile; ?>
 </section>
 
+<section class="discription container">
+	<p>Payson Smith Holbrook, Inc. specializes in Acquisitions &amp; Dispositions, Agency Leasing, Project Management and Tenant Representation.  We at PSH work every day to develop the interpersonal relationships with our clients that result in a  deeper understanding of their present and future expectations. Whether your needs are the expansion into a new market, the disposition of non-productive assets or the oversight of a complex project, we are here to help navigate through the times. PSH is dedicated to committing our team to be a part of your team in consultative planning, build-to-suit design, market and demographic evaluation, true cost of occupancy analysis, project management, property management and lease administration. </p>
+</section>
+
 <section class="news-feed">
 
 	<h2>See what’s happening in your market and around the world.</h2>
@@ -182,7 +186,5 @@ $business_news = new WP_Query( $business_args ); ?>
 
 </section>
 
-<section class="discription ">
-	<p>Payson Smith Holbrook, Inc. specializes in Acquisitions &amp; Dispositions, Agency Leasing, Project Management and Tenant Representation.  We at PSH work every day to develop the interpersonal relationships with our clients that result in a  deeper understanding of their present and future expectations. Whether your needs are the expansion into a new market, the disposition of non-productive assets or the oversight of a complex project, we are here to help navigate through the times. PSH is dedicated to committing our team to be a part of your team in consultative planning, build-to-suit design, market and demographic evaluation, true cost of occupancy analysis, project management, property management and lease administration. </p>
-</section>
+
 

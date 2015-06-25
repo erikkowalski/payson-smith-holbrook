@@ -214,7 +214,12 @@ aside {
 		}
 
 	.discription{
-		background:$gray-lighter;
+		font-size: 1.4em;
+		line-height: 2.0em;
+		p{
+			//font-family: $font-family-sans-serif;
+			font-weight: 200;
+		}
 	}
 
 } // - - </.home>
