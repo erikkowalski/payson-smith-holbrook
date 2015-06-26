@@ -113,7 +113,7 @@ $m_and_a_args = [
 
 $m_and_a = new WP_Query( $m_and_a_args ); ?>
 	<h3>M&amp;A News: </h3>
-	<img class="img-responsive" src="<?php the_field('markets_and_acquisitions'); ?>" alt="slide four">
+	<img class="img-responsive" src="<?php the_field('m_and_a'); ?>" alt="slide four">
 	<aside  class="row">
 		<?php while ( $m_and_a->have_posts() ) : $m_and_a->the_post(); ?>
 		<div class="col-md-4">
