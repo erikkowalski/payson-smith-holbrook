@@ -48,7 +48,7 @@
 
 <section class="news-feed">
 
-	<h2>See what’s happening in your market and around the world.</h2>
+	<h2>See what’s happening in your market and around the country.</h2>
 
 <?php //Display 3 random Costar News Posts
 $costar_feed_args = [
