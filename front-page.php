@@ -87,6 +87,7 @@ $costar_boston_args = [
 $costar_boston = new WP_Query( $costar_boston_args );
 	?>
 	<h3>Boston Commercial Real Estate News:</h3>
+	<img class="img-responsive" src="<?php the_field('boston_news'); ?>" alt="slide four">
 	<aside  class="row">
 		<?php while ( $costar_boston->have_posts() ) : $costar_boston->the_post(); ?>
 		<div class="col-md-4">
@@ -110,6 +111,7 @@ $m_and_a_args = [
 
 $m_and_a = new WP_Query( $m_and_a_args ); ?>
 	<h3>M&amp;A News: </h3>
+	<img class="img-responsive" src="<?php the_field('m&a'); ?>" alt="slide four">
 	<aside  class="row">
 		<?php while ( $m_and_a->have_posts() ) : $m_and_a->the_post(); ?>
 		<div class="col-md-4">
@@ -131,6 +133,7 @@ $business_args = [
 
 $business_news = new WP_Query( $business_args ); ?>
 	<h3>Business News:</h3>
+	<img class="img-responsive" src="<?php the_field('business_news'); ?>" alt="slide four">
 	<aside  class="row">
 		<?php while ( $business_news->have_posts() ) : $business_news->the_post(); ?>
 		<div class="col-md-4">
@@ -143,17 +146,18 @@ $business_news = new WP_Query( $business_args ); ?>
 	</aside>
 
 	<?php //Display 3 random News Posts
-$business_args = [
+$economic_args = [
 	'post_type' => 'economic',
 	'posts_per_page' => 3,
 	'orderby' => 'rand'
 ];
 
 
-$business_news = new WP_Query( $business_args ); ?>
+$economic_news = new WP_Query( $economic_args ); ?>
 	<h3>Economic News:</h3>
+	<img class="img-responsive" src="<?php the_field('economic_news'); ?>" alt="slide four">
 	<aside  class="row">
-		<?php while ( $business_news->have_posts() ) : $business_news->the_post(); ?>
+		<?php while ( $economic_news->have_posts() ) : $economic_news->the_post(); ?>
 		<div class="col-md-4">
 			<h4 class="entry-title"> <a href="<?php the_permalink(); ?>"><?php the_title();?> </a></h4>
 			<div class="entry-content">
@@ -164,17 +168,18 @@ $business_news = new WP_Query( $business_args ); ?>
 	</aside>
 
 	<?php //Display 3 random News Posts
-$business_args = [
+$financial_args = [
 	'post_type' => 'financial',
 	'posts_per_page' => 3,
 	'orderby' => 'rand'
 ];
 
 
-$business_news = new WP_Query( $business_args ); ?>
+$financial_news = new WP_Query( $financial_args ); ?>
 	<h3>Financial News:</h3>
+	<img class="img-responsive" src="<?php the_field('financial_news'); ?>" alt="slide four">
 	<aside  class="row">
-		<?php while ( $business_news->have_posts() ) : $business_news->the_post(); ?>
+		<?php while ( $financial_news->have_posts() ) : $financial_news->the_post(); ?>
 		<div class="col-md-4">
 			<h4 class="entry-title"> <a href="<?php the_permalink(); ?>"><?php the_title();?> </a></h4>
 			<div class="entry-content">
