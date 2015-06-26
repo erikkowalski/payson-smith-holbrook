@@ -96,7 +96,9 @@ $costar_boston = new WP_Query( $costar_boston_args );
 				<?php the_excerpt();?>
 			</div>
 		</div>
-		<?php endwhile;?>
+		<?php endwhile;
+		wp_reset_postdata();
+		?>
 	</aside>
 
 
@@ -111,7 +113,7 @@ $m_and_a_args = [
 
 $m_and_a = new WP_Query( $m_and_a_args ); ?>
 	<h3>M&amp;A News: </h3>
-	<img class="img-responsive" src="<?php the_field('m&a'); ?>" alt="slide four">
+	<img class="img-responsive" src="<?php the_field('markets_and_acquisitions'); ?>" alt="slide four">
 	<aside  class="row">
 		<?php while ( $m_and_a->have_posts() ) : $m_and_a->the_post(); ?>
 		<div class="col-md-4">
@@ -120,7 +122,9 @@ $m_and_a = new WP_Query( $m_and_a_args ); ?>
 				<?php the_excerpt();?>
 			</div>
 		</div>
-		<?php endwhile;?>
+		<?php endwhile;
+wp_reset_postdata();
+		?>
 	</aside>
 
 	<?php //Display 3 random News Posts
@@ -142,7 +146,9 @@ $business_news = new WP_Query( $business_args ); ?>
 				<?php the_excerpt();?>
 			</div>
 		</div>
-		<?php endwhile;?>
+		<?php endwhile;
+wp_reset_postdata();
+		?>
 	</aside>
 
 	<?php //Display 3 random News Posts
@@ -164,7 +170,9 @@ $economic_news = new WP_Query( $economic_args ); ?>
 				<?php the_excerpt();?>
 			</div>
 		</div>
-		<?php endwhile;?>
+		<?php endwhile;
+wp_reset_postdata();
+		?>
 	</aside>
 
 	<?php //Display 3 random News Posts
@@ -186,7 +194,9 @@ $financial_news = new WP_Query( $financial_args ); ?>
 				<?php the_excerpt();?>
 			</div>
 		</div>
-		<?php endwhile;?>
+		<?php endwhile;
+wp_reset_postdata();
+		?>
 	</aside>
 
 </section>
