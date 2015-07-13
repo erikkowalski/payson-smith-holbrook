@@ -1,5 +1,17 @@
 .company {
 	.page-header{
+		text-align: center;
+			h1 {
+				font-size: 5em;
+				font-family: $font-family-serif;
+			}
 
+	}
+}
+
+.company {
+	.content {
+		max-width: 660px;
+		margin: 0 auto;
 	}
 }

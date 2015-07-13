@@ -57,6 +57,7 @@ function display_sidebar() {
         ['is_page_template', 'template-custom.php'],
         ['is_page_template', 'template-company.php'],
 		  ['is_page', 'contact'],
+		  ['is_page', 'our-performance'],
         ['is_post_type_archive', ['psh_properties']],
         ['is_post_type_archive', ['psh_news']],
         ['is_singular', ['psh_properties'] ]
