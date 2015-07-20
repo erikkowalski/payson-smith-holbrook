@@ -1,8 +1,13 @@
 .sidebar {
 	ul {
 		margin: 0;
-		padding: 0;
+		padding: 0 1em 0 0;
+		@media (min-width:$screen-md){
+			padding: 0 4em 0 0;
+		}
 	}
+
+
 	li {
 		list-style: none;
 	}
