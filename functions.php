@@ -18,7 +18,7 @@ $sage_includes = [
   'lib/assets.php',                // Scripts and stylesheets
   'lib/titles.php',                // Page titles
   'lib/extras.php',                // Custom functions
-  'lib/wp_bootstrap_navwalker.php',                // Custom functions
+  'lib/wp_bootstrap_navwalker.php',  // Bootstrap Nav walker
 
 ];
 
