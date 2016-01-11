@@ -14,4 +14,34 @@
 
 		}
 	}
+	form {
+		max-width: 500px;
+		margin: 0 auto;
+		padding: 1em;
+		border-radius: 10px;
+		border: 1px solid $gray;
+		background: $gray-lighter;
+		p:first-child {
+				font-family: $font-family-sans-serif;
+				color: $brand-primary;
+					@media (min-width:$screen-sm){
+					font-size: 1.8em;
+				}
+			font-weight: 200;
+			text-align: center;
+			padding-bottom: 1em;
+
+		}
+		p:nth-child(2){
+			@media (min-width:$screen-sm){
+			margin-left: 2em;
+			}
+		}
+		input {
+					@media (max-width:$screen-sm){
+						display: inline-block;
+						widows: 100%;
+					}
+				}
+	}
 }
