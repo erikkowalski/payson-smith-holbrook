@@ -1,0 +1,17 @@
+.page-template-template-map {
+	.page-header {
+		text-align: center;
+		margin-top: 1em;
+			h1 {
+				font-weight: 100;
+				margin-top: 0;
+				padding-top: 0;
+				color: $brand-primary;
+			}
+		@media (min-width:$screen-sm){
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+
+		}
+	}
+}
