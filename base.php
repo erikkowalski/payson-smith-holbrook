@@ -21,7 +21,7 @@ use Roots\Sage\Wrapper;
 
       <?php
         $url = basename( Wrapper\template_path() );
-$full_width_pages = [ 'front-page.php', 'page-about.php', 'template-company.php', 'page-contact.php', 'page-our-performance.php' ];
+$full_width_pages = [ 'front-page.php', 'page-about.php', 'template-company.php', 'page-contact.php','template-map.php', 'page-our-performance.php' ];
         $container = Roots\Sage\Extras\container_selector( $url, $full_width_pages );
       ?>
 
