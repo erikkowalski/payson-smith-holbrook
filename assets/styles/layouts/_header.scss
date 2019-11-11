@@ -10,13 +10,14 @@
     }
 }
 
-.navbar-default {
+.navbar-inverse {
     .navbar-nav>li>a{
-        font-size: 1.2em;
+        font-size: 0.8em;
         letter-spacing: 0.05em;
         @media(min-width:$screen-md){
-            font-weight: 300;
-            font-size: 1.3em;
+          font-weight: 400;
+          font-size: 1.1em;
+          letter-spacing: 0.03em;
         }
 
     }
