@@ -205,7 +205,7 @@ aside {
     }
 
     .entry-content {
-        //font-size: 1.3em;
+        font-size: 1.3em;
         font-family: $font-family-serif;
     }
 }
@@ -221,12 +221,15 @@ aside {
 			}
 }
 		p {
-				font-family: $font-family-serif;
+				font-family: minion-pro-display, serif;
+                font-weight: 400;
+                font-style: normal;
 				font-size: 1.8em;
 				text-align: center;
 			span {
-				font-family: $font-family-sans-serif;
-				font-size: 0.8em;
+			font-family: minion-pro-display, serif;
+            font-weight: 400;
+            font-style: italic;
 			}
 				@media (min-width:$screen-md){
 					font-size: 2.6em;
@@ -240,10 +243,25 @@ aside {
 		font-size: 1.4em;
 		line-height: 2.0em;
 		p{
-			//font-family: $font-family-sans-serif;
-			font-weight: 200;
+			font-family: minion-pro-display, serif;
+
 		}
 	}
+
+  .services-lines-sections {
+    @media(min-width:$screen-md){
+      padding: 2em 8em;
+    }
+    h2 {
+      text-align: center;
+    }
+
+  li {
+    font-family: $font-family-serif;
+    font-size: 1.2em;
+    list-style: circle;
+  }
+      }
 
 } // - - </.home>
 
