@@ -251,17 +251,49 @@ aside {
   .services-lines-sections {
     @media(min-width:$screen-md){
       padding: 2em 8em;
+          }
+          h2 {
+            text-align: center;
+          }
+
+        li {
+          font-family: $font-family-serif;
+          font-size: 1.2em;
+          list-style: circle;
+        }
+      }
+
+  .mid-page-image-container {
+     @media(min-width:$screen-sm){
+    background-image: url('../images/office.jpg');
     }
-    h2 {
-      text-align: center;
+    background-size: cover;
+       .mid-page-text {
+         background: rgba(255, 255, 255, 0.95);}
+      @media(min-width:$screen-sm){
+        padding: 9em 0em;
+        .mid-page-text {
+          background: rgba(255, 255, 255, 0.95);
+          padding: 1.5em;
+          font-size: 1.4em;
+          line-height: 1.7em;
+        }
+        }
+    @media(min-width:$screen-md){
+   padding: 11em 0em;
     }
 
-  li {
-    font-family: $font-family-serif;
-    font-size: 1.2em;
-    list-style: circle;
   }
-      }
+  .service-header {
+    font-family: $font-family-serif;
+    font-size: 4em;
+    @media(min-width:$screen-sm){
+      margin-top: 1em;
+    }
+
+  }
+
+
 
 } // - - </.home>
 

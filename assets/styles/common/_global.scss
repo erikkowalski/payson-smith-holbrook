@@ -1,20 +1,32 @@
 
 
+body {
+padding-top: 80px;}
+
 comment-content img, .entry-content img, .widget img {
     max-width: 100%
 }
 
+
+#tinymce {
+	padding-top: 0;
+}
+
 img[class*=align], img[class*=wp-image-] {
-    height: auto;
+	height: auto;
 }
 img.size-full {
-    max-width: 100%;
-    width: auto;
+	max-width: 100%;
+	width: auto;
 }
 
 img.wp-post-image {
-    max-width: 100%;
-    height: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.admin-bar .navbar {
+	margin-top: 30px;
 }
 
 p {

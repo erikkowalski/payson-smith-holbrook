@@ -42,8 +42,19 @@
 <?php endwhile; ?>
 </section>
 
+<section class="mid-page-image-container container-fluid">
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+    	<p class="mid-page-text">Payson Smith Holbrook, Inc. specializes in Acquisitions &amp; Dispositions, Agency Leasing, Project Management and Tenant Representation.  We at PSH work every day to develop the interpersonal relationships with our clients that result in a  deeper understanding of their present and future expectations. Whether your needs are the expansion into a new market, the disposition of non-productive assets or the oversight of a complex project, we are here to help navigate through the times. PSH is dedicated to committing our team to be a part of your team in consultative planning, build-to-suit design, market and demographic evaluation, true cost of occupancy analysis, project management, property management and lease administration. </p>
+
+  </div>
+</div>
+
+</section>
+
 <section class="discription container">
-	<p>Payson Smith Holbrook, Inc. specializes in Acquisitions &amp; Dispositions, Agency Leasing, Project Management and Tenant Representation.  We at PSH work every day to develop the interpersonal relationships with our clients that result in a  deeper understanding of their present and future expectations. Whether your needs are the expansion into a new market, the disposition of non-productive assets or the oversight of a complex project, we are here to help navigate through the times. PSH is dedicated to committing our team to be a part of your team in consultative planning, build-to-suit design, market and demographic evaluation, true cost of occupancy analysis, project management, property management and lease administration. </p>
+
+<h1 class="text-center service-header">Services Lines</h1>
 </section>
 
 
@@ -52,8 +63,11 @@ if( have_rows('content_sections') ):
     while ( have_rows('content_sections') ) : the_row(); ?>
 
      <section class="services-lines-sections container" id="<?php the_sub_field('section_id');?>">
-     <hr>
+
      <div class="row">
+      <div class="col-sm-12">
+        <img class="img-responsive" src="<?php the_sub_field('image') ?>" alt="">
+      </div>
        <div class="col-sm-12">
          <h2><?php  the_sub_field('header');?></h2>
        </div>
